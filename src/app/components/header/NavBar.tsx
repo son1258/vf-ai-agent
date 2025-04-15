@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "../locale/LanguageSwitcher";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function NavBar() {
