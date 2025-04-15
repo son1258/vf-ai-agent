@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import LanguageSwitcher from "../locale/LanguageSwitcher";
+import LanguageSwitcher from "../LanguageSwitcher";
 import { useState } from "react";
 
 export default function NavBar() {
@@ -46,7 +46,7 @@ export default function NavBar() {
                 <button className="px-4 py-3 rounded-lg border-[0.5px] border-black/20 cursor-pointer">
                     {translate("signup")}
                 </button>
-                <div className="flex items-center justify-center px-2 py-3 rounded-lg border-[0.5px] border-black/20 cursor-pointer">
+                <div className="flex items-center justify-center px-4 py-3 rounded-lg border-[0.5px] border-black/20 cursor-pointer">
                     <LanguageSwitcher />
                 </div>
             </div>
