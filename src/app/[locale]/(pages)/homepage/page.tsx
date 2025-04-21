@@ -184,7 +184,7 @@ export default function HomePage() {
                         </div>
                         <div className="lg:hidden flex flex-col gap-4 mt-8">
                             {ItemsImpactMetric.map((item) => (
-                                <div className="p-4 w-full rounded-[24px] border-[#f46177] bg-white shadow-[0_2px_0_0_#fff_inset,0_-4px_1px_0_#f8888E29_inset,0_0_0_0.6px_#f8888E52,0_4px_6px_-4px_#c34E5F29]">
+                                <div key={item.title} className="p-4 w-full rounded-[24px] border-[#f46177] bg-white shadow-[0_2px_0_0_#fff_inset,0_-4px_1px_0_#f8888E29_inset,0_0_0_0.6px_#f8888E52,0_4px_6px_-4px_#c34E5F29]">
                                     <div className="w-full flex items-center justify-center flex-col text-center">
                                         <img src={item.icon} alt={`${item.title} icon`} />
                                         <p className="font-[700] text-[32px] leading-[38px]">{item.title}</p>
@@ -247,7 +247,7 @@ export default function HomePage() {
                         <div className="md:w-[76%] w-full">
                             <div className="md:grid md:grid-cols-4 flex flex-col gap-6">
                                 {ItemsPayer.map((payer) => (
-                                    <div className="w-full text-[16px]">
+                                    <div className="w-full text-[16px]" key={payer.title}>
                                         <div className="p-6">
                                             <img src={payer.icon} alt={`${payer.title} icon`} />
                                             <p className="font-feature font-[700] leading-[19.2px] my-4">{payer.title}</p>
@@ -406,7 +406,7 @@ export default function HomePage() {
                     <div className="px-3 md:w-[90%] w-full mt-6">
                         <div className="flex lg:flex-row flex-col items-center justify-between w-full gap-8">
                             {ItemsConnect.map((item) => (
-                                <div className="flex flex-col text-center">
+                                <div className="flex flex-col text-center" key={item.title}>
                                     <p className="text-[#6c7278] mb-2 md:text-[18px] text-[14px]">{item.title}</p>
                                     <p className="font-feature font-[700] 2xl:text-[40px] md:text-[32px] text-[26px] leading-[56px] tracking-[0.75px] text-[#1a1a1a] underline underline-offset-8 cursor-pointer">{item.description}</p>
                                 </div>
