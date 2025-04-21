@@ -2,41 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
+div.swiper-button-prev::after,
+div.swiper-button-next::after {
     font-size: 20px;
 }
-.swiper-button-prev,
-.swiper-button-next {
+div.swiper-button-prev,
+div.swiper-button-next {
     width: 40px;
     height: 40px;
     background-color: white;
     border-radius: 50%;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 20;
     font-size: 24px;
     color: #1a1a1a;
+    position: absolute; 
 }
-.swiper-button-prev {
+div.swiper-button-prev {
     left: 80px;
 }
-.swiper-button-next {
+div.swiper-button-next {
     right: 80px;
 }
 
 @media (max-width: 768px) {
-    .swiper-button-prev,
-    .swiper-button-next {
+    div.swiper-button-prev,
+    div.swiper-button-next {
         top: 55%;
         width: 24px;
         height: 24px;
         background-color: white;
         border-radius: 50%;
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: center;
         cursor: pointer;
@@ -44,14 +44,14 @@
         font-size: 12px;
         color: #1a1a1a;
     }
-    .swiper-button-prev {
+    div.swiper-button-prev {
         left: 20px;
     }
-    .swiper-button-next {
+    div.swiper-button-next {
         right: 20px;
     }
-    .swiper-button-prev::after,
-    .swiper-button-next::after {
+    div.swiper-button-prev::after,
+    div.swiper-button-next::after {
         font-size: 16px;
-    }  
+    }
 }
