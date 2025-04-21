@@ -1,11 +1,12 @@
-import NavBar from '@/components/header/NavBar';
-import { useTranslations } from 'next-intl';
 
-export default function HomePage() {
+import { useTranslations } from 'next-intl';
+import HomePage from './(pages)/homepage/page';
+
+export default function RootPage() {
     const translate = useTranslations();
     return (
-        <div className='w-full flex items-center justify-center'>
-            <NavBar />
+        <div className='w-full h-full'>
+            <HomePage />
         </div>
     );
 }

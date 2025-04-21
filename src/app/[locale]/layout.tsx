@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
 import "./globals.css";
+import NavBar from '@/components/header/NavBar';
 
 export default async function RootLayout({
     children,
@@ -15,7 +16,13 @@ export default async function RootLayout({
         <html lang={locale}>
             <body>
                 <NextIntlClientProvider locale={locale} messages={messages}>
-                    {children}
+                    <div className="fixed top-0 w-full z-10">
+                        <NavBar />
+                    </div>
+                    <main>
+                        {children}
+                    </main>
+
                 </NextIntlClientProvider>
             </body>
         </html>
