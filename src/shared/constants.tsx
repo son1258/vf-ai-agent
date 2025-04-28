@@ -1,3 +1,41 @@
+export const ItemsNav = [
+    {
+        id: 1,
+        text: "We're live on Discord! Join our community and be part of AI discussions",
+        more: "Join Now"
+    },
+    {
+        id: 2,
+        text: "We are among the top finalists in Guidewire’s Insurtech Vanguards Pitch Competition! 🥳",
+        more: ""
+    },
+    {
+        id: 3,
+        text: "🎉 See what Greg from InterProse has to say about #LEXI",
+        more: "Watch Now"
+    },
+    {
+        id: 4,
+        text: "🤖 Introducing AI Agents for Insurance",
+        more: "Read More"
+    },
+    {
+        id: 5,
+        text: "🥳 Floatbot.AI is selected as a Finalist in Insurtech Hartford Innovation Challenge! 🎉",
+        more: "Know More"
+    },
+    {
+        id: 6,
+        text: "📌 Watch out new Floatbot UNO Features",
+        more: "Watch Now"
+    },
+    {
+        id: 7,
+        text: " [Case Study] - Discover how a leading law firm boosted collections with Voice and Chat AI 🎉",
+        more: "Read More"
+    }
+]
+
 export const ItemsExperience = [
     { text: "Debt Collection", icon: "/logos/debt.svg" },
     { text: "Claims FNOL (Intake)", icon: "/logos/claim.svg" },
@@ -6,7 +44,6 @@ export const ItemsExperience = [
     { text: "Lending", icon: "/logos/lending.svg" },
     { text: "Banking", icon: "/logos/banking.svg" },
 ];
-
 
 export const ItemsPayer = [
     {

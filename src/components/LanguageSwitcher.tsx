@@ -24,7 +24,7 @@ export default function LanguageSwitcher() {
     return (
         <div className="relative">
             <button
-                className="flex items-center gap-2"
+                className="flex items-center gap-1"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <Image
@@ -33,7 +33,8 @@ export default function LanguageSwitcher() {
                     width={24}
                     height={24}
                 />
-                <span>{languages.find(lang => lang.code === currentLocale)?.name}</span>
+                <img src="/logos/dropdown.svg" className='hidden screen-992:block' />
+                <span className='screen-992:hidden text-custom-arrow'>+</span>
             </button>
 
             {isOpen && (
