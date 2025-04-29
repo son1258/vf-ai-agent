@@ -36,15 +36,6 @@ export const ItemsNav = [
     }
 ]
 
-export const ItemsExperience = [
-    { text: "Debt Collection", icon: "/logos/debt.svg" },
-    { text: "Claims FNOL (Intake)", icon: "/logos/claim.svg" },
-    { text: "Auto Insurance Quote", icon: "/logos/ins.svg" },
-    { text: "Doctor Appointment Booking", icon: "/logos/doctor-booking.svg" },
-    { text: "Lending", icon: "/logos/lending.svg" },
-    { text: "Banking", icon: "/logos/banking.svg" },
-];
-
 export const ItemsPayer = [
     {
         title: "Billing & Payment Support",
@@ -286,34 +277,6 @@ export const ItemsSwiper = [
         icon:
             "https://floatbot.ai/images/healthcare/digital front door DFD.svg?v=2",
     },
-];
-
-export const ItemsImpactMetric = [
-    {
-        icon: "/logos/setting.svg",
-        title: "50%",
-        description: "Reduction in Patient Support Costs"
-    },
-    {
-        icon: "/logos/time.svg",
-        title: "30%",
-        description: "Decrease in AHT (Average Handle Time)"
-    },
-    {
-        icon: "/logos/phone.svg",
-        title: "80%",
-        description: "Automation of Patient Engagement Calls"
-    },
-    {
-        icon: "/logos/error.svg",
-        title: "70%",
-        description: "Reduction in Compliance Risk"
-    },
-    {
-        icon: "/logos/cancel-phone.svg",
-        title: "90%",
-        description: "Decrease in After-Call Work (ACW)"
-    }
 ];
 
 export const ItemsConnect = [

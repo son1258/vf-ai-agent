@@ -19,6 +19,8 @@ export default function LanguageSwitcher() {
     const languages = [
         { code: 'en', name: 'English', flag: '/logos/english.svg' },
         { code: 'vi', name: 'Tiếng Việt', flag: '/logos/vietnamese.svg' },
+        { code: 'cn', name: 'China', flag: '/logos/china.svg' },
+        { code: 'kr', name: 'Korean', flag: '/logos/korea.svg' },
     ];
 
     return (
@@ -34,7 +36,7 @@ export default function LanguageSwitcher() {
                     height={24}
                 />
                 <img src="/logos/dropdown.svg" className='hidden screen-992:block' />
-                <span className='screen-992:hidden text-custom-arrow'>+</span>
+                <span className='screen-992:hidden text-custom-arrow'>{isOpen ? '-' : '+'}</span>
             </button>
 
             {isOpen && (
@@ -46,7 +48,7 @@ export default function LanguageSwitcher() {
                                 }`}
                             onClick={() => changeLanguage(lang.code)}
                         >
-                            <Image src={lang.flag} alt={`${lang.name} flag`} width={24} height={24} />
+                            <Image src={lang.flag} alt={`${lang.name} flag`} width={24} height={24} className='object-contain' />
                             {lang.name}
                         </li>
                     ))}

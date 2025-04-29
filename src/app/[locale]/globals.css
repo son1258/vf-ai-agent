@@ -2,48 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --bg-page: linear-gradient(180deg, rgba(254, 230, 223, 0.32) 0%, rgba(254, 230, 223, 0) 104.24%);
-    --font-roboto: "Roboto Mono", sans-serif;
-    /*toggle px*/
-    --custom-035: 0.021875rem;
-    --custom-075: 0.046875rem;
-    --custom-1: 0.0625rem;
-    --custom-1-5: 0.09375rem;
-    --custom-2: 0.125rem;
-    --custom-3: 0.1875rem;
-    --custom-4-8: 0.3rem;
-    --custom-5: 0.3125rem;
-    --custom-6: 0.375rem;
-    --custom-7: 0.4375rem;
-    --custom-arrow: 0.6rem;
-    --custom-10: 0.625rem;
-    --custom-13: 0.8125rem;
-    --custom-14: 0.875rem;
-    --custom-15: 0.9375rem;
-    --custom-18: 1.125rem;
-    --custom-21: 1.3125rem;
-    --custom-22: 1.375rem;
-    --custom-23: 1.4375rem;
-    --custom-24: 1.5rem;
-    --custom-25: 1.5625rem;
-    --custom-30: 1.875rem;
-    --custom-33: 2.0625rem;
-    --custom-40: 2.5rem;
-    --custom-42: 2.625rem;
-    --custom-46: 2.875rem;
-    --custom-48: 3rem;
-    --custom-50: 3.125rem;
-    --custom-52: 3.25rem;
-    --custom-56: 3.5rem;
-    --custom-60: 3.75rem;
-    --custom-62: 3.875rem;
-    --custom-64: 4rem;
-    --custom-88: 5.5rem;
-    --custom-102: 6.375rem;
-}
-
-
 html, body {
     overflow: auto;
     scrollbar-width: none;
@@ -63,7 +21,7 @@ div.swiper-button-prev,
 div.swiper-button-next {
     width: 40px;
     height: 40px;
-    background-color: var(--bs-white);
+    background-color: #fff;
     border-radius: 50%;
     display: flex !important;
     align-items: center;
@@ -87,7 +45,7 @@ div.swiper-button-next {
         top: 55%;
         width: 24px;
         height: 24px;
-        background-color: var(--bs-white);
+        background-color: #fff;
         border-radius: 50%;
         display: flex !important;
         align-items: center;
@@ -95,7 +53,7 @@ div.swiper-button-next {
         cursor: pointer;
         z-index: 20;
         font-size: 12px;
-        color: var(--theme-black);
+        color: #1a1a1a;
     }
     div.swiper-button-prev {
         left: 20px;
@@ -107,4 +65,38 @@ div.swiper-button-next {
     div.swiper-button-next::after {
         font-size: 16px;
     }
+}
+
+.p-hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 33.333333%;
+  height: 0.1rem;
+  background-color: #f46177;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.p-hover-underline:hover::after {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .p-hover-underline::after {
+    bottom: 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .p-hover-underline::after {
+    bottom: 2rem; 
+  }
+}
+
+.text-custom-arrow {
+  color: #f46177;
+  font-weight: bold;
+  font-size: 1rem;
 }
